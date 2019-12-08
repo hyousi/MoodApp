@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_SignUp"
+    android:background="@color/colorBackground"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="50dp">
+
+    <TextView
+        android:id="@+id/txt_signup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="Settings"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/txt_settings_plain_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="Theme Color"
+        android:layout_below="@+id/txt_signup_title"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/et_signup_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightBlue"
+        android:text="Default"
+        android:inputType="text"
+        android:clickable="true"
+        android:onClick=""
+        android:layout_below="@+id/txt_settings_plain_theme"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/txt_settings_plain_theme"
+        />
+
+    <TextView
+        android:id="@+id/txt_signup_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="Font"
+        android:layout_below="@+id/et_signup_username"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/et_signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightBlue"
+        android:text="Arial"
+        android:clickable="true"
+        android:onClick=""
+        android:layout_below="@+id/txt_signup_password"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_alignLeft="@id/txt_settings_plain_theme"
+        />
+
+    <TextView
+        android:id="@+id/txt_signup_confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="Background"
+        android:layout_below="@+id/et_signup_password"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/et_signup_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightBlue"
+        android:text="Choose A Background"
+        android:layout_below="@+id/txt_signup_confirm_password"
+        android:clickable="true"
+        android:onClick=""
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_alignLeft="@id/txt_settings_plain_theme"
+        />
+
+    <TextView
+        android:id="@+id/txt_signup_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="Change Profile Picture"
+        android:layout_below="@+id/et_signup_confirm_password"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_settings_change_profilePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightBlue"
+        android:text="Choose A Profile Picture"
+        android:layout_below="@+id/txt_signup_email"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:onClick=""
+        android:layout_alignLeft="@id/txt_settings_plain_theme"
+        />
+
+    <TextView
+        android:id="@+id/txt_settings_plain_chatbot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="Chatbot Settings"
+        android:layout_below="@id/txt_settings_change_profilePic"
+
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        />
+
+    <Switch
+        android:id="@+id/sw_chatbotOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_settings_plain_chatbot"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_settings_plain_chatbotOnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="Turn On Chatbot"
+        android:layout_below="@+id/txt_settings_plain_chatbot"
+        android:layout_toRightOf="@+id/sw_chatbotOnOff"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sw_chatbotOnOff"
+        android:layout_marginTop="30dp"
+        android:text="Save"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorLightBlue"
+        />
+
+</RelativeLayout>

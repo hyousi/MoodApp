@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment_Diary_View"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:id="@+id/txt_diaryView_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Specified date"
+            android:textColor="@color/colorLightBlue"
+            android:textSize="15sp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:id="@+id/txt_diaryView_plain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_diaryView_date"
+            android:text="How are you feeling today?"
+            android:textColor="@color/colorWhite"
+            android:textSize="25sp"
+            android:layout_marginTop="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_box"
+            android:layout_marginTop="30dp"
+            android:text="Some text"
+            android:layout_below="@id/txt_diaryView_plain"
+            android:layout_above="@id/btn_diaryView"
+            android:layout_marginBottom="20dp"
+            />
+
+        <Button
+            android:id="@+id/btn_diaryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorDarkBlue"
+            android:text="Calm"
+            android:textColor="@color/colorWhite"
+            android:layout_above="@+id/btn_diaryView_edit"
+            android:layout_marginBottom="30dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn_diaryView_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorLightBlue"
+            android:text="Submit"
+            android:textColor="@color/colorWhite"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

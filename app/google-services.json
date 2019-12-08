@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "973796069208",
+    "firebase_url": "https://mobileassignment-f27f6.firebaseio.com",
+    "project_id": "mobileassignment-f27f6",
+    "storage_bucket": "mobileassignment-f27f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973796069208:android:7fa817064694c69cc79f2d",
+        "android_client_info": {
+          "package_name": "com.example.moodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "973796069208-7icbvl9u3k4cijic8ee4302ik7lijuoq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moodapp",
+            "certificate_hash": "5532f29584b5a54f7ef5ec76541889babb0060a2"
+          }
+        },
+        {
+          "client_id": "973796069208-436126vdjjnr0m01jpg5m74uad60tpfb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moodapp",
+            "certificate_hash": "e54b0016f28a63f7c10dc4f23818a75478bceb05"
+          }
+        },
+        {
+          "client_id": "973796069208-8ttcv2m5mndpqn5a3h1e505804ua6ia4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3NREYuDLyfiydF47sqjPxu1RWEPb7CIg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "973796069208-8ttcv2m5mndpqn5a3h1e505804ua6ia4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
