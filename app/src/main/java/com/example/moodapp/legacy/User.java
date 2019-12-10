@@ -1,4 +1,4 @@
-package com.example.moodapp;
+package com.example.moodapp.legacy;
 
 public class User {
 

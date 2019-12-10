@@ -15,13 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DIARY_Save"/>
-        <activity android:name=".DIARY_Edit"/>
-        <activity android:name=".DIARY_New"/>
-        <activity android:name=".Activity_SignUp" />
-        <activity android:name=".Activity_SignIn" />
+        <activity android:name=".legacy.DIARY_Save" />
+        <activity android:name=".legacy.DIARY_Edit" />
+        <activity android:name=".legacy.DIARY_New" />
+        <activity android:name=".legacy.Activity_SignUp" />
+        <activity android:name=".legacy.Activity_SignIn" />
         <activity
-            android:name=".LoginPage"
+            android:name=".legacy.LoginPage"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

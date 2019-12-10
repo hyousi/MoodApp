@@ -1,4 +1,4 @@
-package com.example.moodapp;
+package com.example.moodapp.legacy;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.MultiAutoCompleteTextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.moodapp.R;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
