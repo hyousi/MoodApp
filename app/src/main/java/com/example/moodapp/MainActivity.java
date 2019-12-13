@@ -16,9 +16,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class MainActivity extends AppCompatActivity {
 
-    private DrawerLayout drawerLayout;
+    DrawerLayout drawerLayout;
+    BottomNavigationView bottomNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         drawerLayout = findViewById(R.id.drawer_layout);
+        bottomNav = findViewById(R.id.bottom_nav);
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         AppBarConfiguration appBarConfiguration =
@@ -45,10 +49,12 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.registrationFragment:
                         toolbar.setVisibility(View.GONE);
                         drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+                        bottomNav.setVisibility(View.GONE);
                         break;
                     default:
                         toolbar.setVisibility(View.VISIBLE);
                         drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+                        bottomNav.setVisibility(View.VISIBLE);
                         break;
                 }
             }
