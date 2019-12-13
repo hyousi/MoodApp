@@ -10,9 +10,6 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
-            android:id="@+id/action_homeFragment_to_diaryListFragment"
-            app:destination="@id/diaryListFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_diaryDetailFragment"
             app:destination="@id/diaryDetailFragment" />
     </fragment>
