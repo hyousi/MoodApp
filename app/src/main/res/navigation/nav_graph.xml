@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loadingFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.moodapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_diaryListFragment"
+            app:destination="@id/diaryListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_diaryDetailFragment"
+            app:destination="@id/diaryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryDetailFragment"
+        android:name="com.example.moodapp.DiaryDetailFragment"
+        android:label="fragment_diary_detail"
+        tools:layout="@layout/fragment_diary_detail">
+        <action
+            android:id="@+id/action_diaryDetailFragment_to_diaryEditFragment"
+            app:destination="@id/diaryEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryEditFragment"
+        android:name="com.example.moodapp.DiaryEditFragment"
+        android:label="fragment_diary_edit"
+        tools:layout="@layout/fragment_diary_edit" />
+    <fragment
+        android:id="@+id/diaryCreateFragment"
+        android:name="com.example.moodapp.DiaryCreateFragment"
+        android:label="fragment_diary_create"
+        tools:layout="@layout/fragment_diary_create" />
+    <fragment
+        android:id="@+id/diaryListFragment"
+        android:name="com.example.moodapp.DiaryListFragment"
+        android:label="fragment_diary_list"
+        tools:layout="@layout/fragment_diary_list">
+        <action
+            android:id="@+id/action_diaryListFragment_to_diaryCreateFragment"
+            app:destination="@id/diaryCreateFragment" />
+        <action
+            android:id="@+id/action_diaryListFragment_to_diaryDetailFragment"
+            app:destination="@id/diaryDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.moodapp.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.moodapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.moodapp.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading">
+        <action
+            android:id="@+id/action_loadingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.moodapp.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" />
+
+</navigation>

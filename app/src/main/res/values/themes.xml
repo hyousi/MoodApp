@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MyApp" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <!--  Theme Overlay  -->
+        <item name="colorPrimary">@color/colorDarkBlue</item>
+        <item name="textAppearanceBody2">@style/MyBody2</item>
+        <!--        -->
+    </style>
+</resources>
