@@ -1,8 +1,10 @@
 package com.example.moodapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
@@ -51,10 +53,21 @@ public class HomeFragment extends Fragment {
                         break;
                     case UNAUTHENTICATED:
                         navController.navigate(R.id.loginFragment);
-                        // FIXME: should do as the `home` button on the device, not return tp loading page.
                         break;
                 }
             }
         });
+
+        // Go to the home screen, when click back button.
+        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(),
+                new OnBackPressedCallback(true) {
+                    @Override
+                    public void handleOnBackPressed() {
+                        Intent startMain = new Intent(Intent.ACTION_MAIN);
+                        startMain.addCategory(Intent.CATEGORY_HOME);
+                        startMain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(startMain);
+                    }
+                });
     }
 }
