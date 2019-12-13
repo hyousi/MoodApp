@@ -25,9 +25,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        drawerLayout = findViewById(R.id.drawer_layout);
+
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         AppBarConfiguration appBarConfiguration =
-                new AppBarConfiguration.Builder(R.id.homeFragment).build();
+                new AppBarConfiguration.Builder(R.id.homeFragment)
+                        .setDrawerLayout(drawerLayout)
+                        .build();
         final Toolbar toolbar = findViewById(R.id.toolbar);
         NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration);
 
@@ -35,12 +39,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDestinationChanged(@NonNull NavController controller,
                                              @NonNull NavDestination destination, @Nullable Bundle arguments) {
-                if (destination.getId() == R.id.loadingFragment) {
-                    toolbar.setVisibility(View.GONE);
-//                    bottomNavigationView.setVisibility(View.GONE);
-                } else {
-                    toolbar.setVisibility(View.VISIBLE);
-//                    bottomNavigationView.setVisibility(View.VISIBLE);
+                switch (destination.getId()) {
+                    case R.id.loadingFragment:
+                    case R.id.loginFragment:
+                    case R.id.registrationFragment:
+                        toolbar.setVisibility(View.GONE);
+                        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
+                        break;
+                    default:
+                        toolbar.setVisibility(View.VISIBLE);
+                        drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED);
+                        break;
                 }
             }
         });
