@@ -30,5 +30,7 @@
     <string name="logo_content_description">Shrine Logo</string>
     <string name="signup_button">Register+Login</string>
     <string name="login_button">Login</string>
+    <string name="recent_item">Recents</string>
+    <string name="home_item">Home</string>
 
 </resources>
