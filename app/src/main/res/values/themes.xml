@@ -3,8 +3,8 @@
 
     <style name="Theme.MyApp" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
         <!--  Theme Overlay  -->
-        <item name="colorPrimary">@color/colorDarkBlue</item>
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
         <item name="textAppearanceBody2">@style/MyBody2</item>
-        <!--        -->
     </style>
 </resources>

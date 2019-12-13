@@ -32,5 +32,6 @@
     <string name="login_button">Login</string>
     <string name="recent_item">Recents</string>
     <string name="home_item">Home</string>
+    <string name="register_item">Register</string>
 
 </resources>
