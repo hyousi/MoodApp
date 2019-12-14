@@ -25,7 +25,6 @@ import com.google.android.material.snackbar.Snackbar;
 public class LoginFragment extends Fragment {
 
     private LoginViewModel viewModel;
-
     private FragmentLoginBinding binding;
 
     @Override
@@ -52,11 +51,10 @@ public class LoginFragment extends Fragment {
             }
         });
 
-        binding.cancelButton.setOnClickListener(new View.OnClickListener() {
+        binding.registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.usernameTextInput.getEditText().setText(null);
-                binding.passwordTextInput.getEditText().setText(null);
+                navController.navigate(R.id.action_loginFragment_to_registrationFragment);
             }
         });
 

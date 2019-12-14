@@ -28,10 +28,12 @@
     <string name="error_password">Password must contain at least 8 characters.</string>
     <string name="invalid_credentials">Username or Password error!</string>
     <string name="logo_content_description">Shrine Logo</string>
-    <string name="signup_button">Register+Login</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="hint_confirm">Confirm</string>
     <string name="login_button">Login</string>
     <string name="recent_item">Recents</string>
     <string name="home_item">Home</string>
     <string name="register_item">Register</string>
+    <string name="register_button">Create account</string>
 
 </resources>
