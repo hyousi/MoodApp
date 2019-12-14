@@ -26,6 +26,7 @@ public class DiaryListFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_diary_list, container, false);
+        // TODO: implement databinding and adapter here.
     }
 
 }
