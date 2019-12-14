@@ -26,6 +26,7 @@ public class DiaryDetailFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_diary_detail, container, false);
+        // TODO: add data bing and action listener here.
     }
 
 }
