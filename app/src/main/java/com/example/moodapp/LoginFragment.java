@@ -52,6 +52,14 @@ public class LoginFragment extends Fragment {
             }
         });
 
+        binding.cancelButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.usernameTextInput.getEditText().setText(null);
+                binding.passwordTextInput.getEditText().setText(null);
+            }
+        });
+
         requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(),
                 new OnBackPressedCallback(true) {
                     @Override
